@@ -1,7 +1,3 @@
-# README #
-
-### What is this repository for? ###
-
 * ericlightbody custom wordpress theme
 * Version 1.0
 
