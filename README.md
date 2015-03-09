@@ -1,3 +1,4 @@
+### What is this?
 * ericlightbody custom wordpress theme
 * Version 1.0
 
