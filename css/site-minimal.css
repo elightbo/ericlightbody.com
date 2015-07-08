@@ -1,0 +1,106 @@
+html, body {
+	background : #000000;
+}
+
+header {
+	/*border-top : 6px solid #FF6A00;*/
+}
+
+header .large-12 {
+	background : #999999;
+}
+
+header .top-bar {
+	/*background: #fff;*/
+	color : #f8f8f8;
+	min-height: 100px;
+}
+
+header .top-bar .name h1 a {
+	color : #333333;
+}
+
+header .top-bar-section ul li {
+	background : #ffffff;
+}
+
+header nav .top-bar-section a {
+	/*background-color: #F8F8F8;*/
+	/*border: 1px solid #ECECEC;*/
+	color          : #919293;
+	text-transform : lowercase;
+}
+
+input[type=search] {
+	-webkit-appearance : textfield;
+	-webkit-box-sizing : content-box;
+	font-family        : inherit;
+	font-size          : 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display : none;
+}
+
+/*.search {*/
+/*position: relative;*/
+/*}*/
+
+header form.search {
+	position : relative;
+}
+
+.search .fi-magnifying-glass {
+	color     : #232323;
+	position  : absolute;
+	top       : 17px;
+	z-index   : 100;
+	left      : 11px;
+	font-size : 19px;
+}
+
+.search .fi-magnifying-glass:hover {
+	cursor : pointer;
+}
+
+input[type=search] {
+	/*border: solid 1px #ccc;*/
+	border        : 0 transparent;
+	padding       : 9px 10px 9px 10px;
+	color         : transparent;
+	cursor        : pointer;
+	width         : 15px;
+	border-radius : 10em;
+	transition    : all .5s;
+	box-shadow    : none;
+}
+
+input[type=search]:focus {
+	width            : 130px;
+	padding-left     : 32px;
+	background-color : #fff;
+	border-color     : #6dcff6;
+	box-shadow       : 0 0 5px rgba(109, 207, 246, .5);
+	color            : #000;
+	cursor           : auto;
+}
+
+input[type=search]:hover {
+	background-color : #ffffff;
+}
+
+/* placeholder */
+input:-moz-placeholder {
+	color : transparent;
+}
+
+input::-webkit-input-placeholder {
+	color : transparent;
+}
+
+[role=content] {
+	background : #FFFFFF;
+	padding    : 74px;
+	font-size  : 13em;
+}

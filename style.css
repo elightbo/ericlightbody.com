@@ -1,0 +1,213 @@
+/*
+ Theme Name:   Eric Lightbody
+ Author:       Eric Lightbody
+ Author URI:   http://ericlightbody.com
+ Template:     ericlightbody
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+body, .top-bar-section ul li > a {
+  font-family: "PT Serif", serif;
+}
+
+body {
+  font-size:       1.2rem;
+  color:           #666666;
+  text-align:      justify;
+  border-top:      6px solid #FF6A00;
+  -webkit-hyphens: auto;
+  text-rendering:  optimizeLegibility;
+}
+
+p {
+  font-size:     1.4rem;
+  line-height:   1.8;
+  margin-bottom: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Serif", Helvetica, Roboto, Arial, sans-serif;
+}
+
+article h2 a {
+  color: #333333;
+}
+
+article h2 a:hover {
+  color: #333333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header .row, [role=content] .row, [role=footer] .row {
+  max-width: 55rem;
+}
+
+header .top-bar {
+  background: #FFFFFF;
+}
+
+header .row {
+  /*padding-top: 40px;*/
+  border-bottom: 1px solid #E1E1E1;
+}
+
+header .top-bar h1 {
+  text-align: left;
+}
+
+/** override foundation specific height **/
+header .top-bar .name {
+  height: auto;
+}
+
+/** hamburger background **/
+header .top-bar.expanded .title-area {
+  background: none;
+}
+
+/** hamburger **/
+header .top-bar .toggle-topbar.menu-icon a span::after {
+  box-shadow: 0 0 0 1px #666666, 0 7px 0 1px #666666, 0 14px 0 1px #666666;
+}
+
+header .top-bar .toggle-topbar.menu-icon a {
+  color: #666666;
+}
+
+header .top-bar .name h1, .top-bar-section ul li > a {
+  line-height: 2.8125rem;
+  font-size:   1.2rem;
+}
+
+header .top-bar .name h1 a, .top-bar-section ul li > a {
+  line-height: 5.8rem;
+}
+
+header .row {
+  min-height: 5.8rem;
+}
+
+header .top-bar {
+  background: #FFFFFF;
+  color:      #F8F8F8;
+  min-height: 5.8rem;
+}
+
+header .top-bar .name h1 a {
+  color: #080808;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background:     #FFFFFF;
+  color:          rgba(75, 75, 75, 0.77);
+  text-transform: lowercase;
+  line-height:    5.8rem;
+}
+
+header .top-bar .name h1 a:hover, .top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: #FFFFFF;
+  color: #080808;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  color: #080808;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family:        inherit;
+  font-size:          100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+header form.search {
+  position: relative;
+}
+
+.search .fi-magnifying-glass {
+  color:     #232323;
+  position:  absolute;
+  top:       17px;
+  z-index:   100;
+  left:      11px;
+  font-size: 19px;
+}
+
+.search .fi-magnifying-glass:hover {
+  cursor: pointer;
+}
+
+input[type=search] {
+  /*border: solid 1px #ccc;*/
+  border:        0 transparent;
+  padding:       9px 10px 9px 10px;
+  color:         transparent;
+  cursor:        pointer;
+  width:         15px;
+  border-radius: 10em;
+  transition:    all .5s;
+  box-shadow:    none;
+}
+
+input[type=search]:focus {
+  width:            130px;
+  padding-left:     32px;
+  background-color: #FFFFFF;
+  border-color:     #6DCFF6;
+  box-shadow:       0 0 5px rgba(109, 207, 246, .5);
+  color:            #000000;
+  cursor:           auto;
+}
+
+input[type=search]:hover {
+  background-color: #FFFFFF;
+}
+
+/* placeholder */
+input:-moz-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+[role=content] {
+  padding: 60px 0;
+}
+
+[role=content] h2 {
+  text-align: center;
+}
+
+[role=footer] .row {
+  border-top:     1px solid rgb(74, 34, 20);
+  padding-top:    40px;
+  padding-bottom: 40px;
+  font-size:      1.35rem;
+  color:          rgba(0, 0, 0, 0.83);
+}
+
+[role=footer] h1 {
+  font-size: 1.6rem;
+}
+
+[role=footer] .column.large-6 {
+  padding-left:  1.9rem;
+  padding-right: 2.9rem;
+}
+
+@media only screen and (max-width: 40em) {
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    line-height: 2rem;
+  }
+}
