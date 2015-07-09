@@ -11,11 +11,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <?php
-    // Post thumbnail.
-//    twentyfifteen_post_thumbnail();
-    ?>
-
     <header class="entry-header">
         <?php
         if ( is_single() ) :
@@ -25,6 +20,15 @@
         endif;
         ?>
     </header><!-- .entry-header -->
+    <footer>
+        <ul>
+            <li><time datetime="<?= get_the_date(DateTime::RFC3339); ?>"><?= get_the_date('j F Y'); ?></time></li>
+            <li>
+                <?= get_the_category_list(',')?>
+            </li>
+            <li>Comment</li>
+        </ul>
+    </footer>
 
     <div class="entry-content">
         <?php
