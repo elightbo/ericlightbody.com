@@ -26,7 +26,7 @@
             <li>
                 <?= get_the_category_list(',')?>
             </li>
-            <li>Comment</li>
+            <li><a href="#">Comment</a></li>
         </ul>
     </footer>
 

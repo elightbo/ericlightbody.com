@@ -206,6 +206,36 @@ input::-webkit-input-placeholder {
   padding-right: 2.9rem;
 }
 
+/** articles **/
+article footer ul {
+  text-align: center;
+  margin-bottom: 2.3rem;
+}
+
+article footer li {
+  display: inline;
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+/** Content **/
+.entry-content p {
+  margin-bottom: 1.8rem;
+}
+
+article footer li, article footer li a {
+  color: rgba(119, 119, 119, 0.78);
+}
+article footer li a:hover {
+  color: #080808;
+}
+
+article footer li:not(:first-child):before {
+  content: "•";
+  padding: 0 0.5rem;
+  color: rgba(119, 119, 119, 0.46);
+}
+
 @media only screen and (max-width: 40em) {
   .top-bar-section li:not(.has-form) a:not(.button) {
     line-height: 2rem;
