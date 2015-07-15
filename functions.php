@@ -5,6 +5,8 @@
  * @package ericlightbody
  */
 
+add_theme_support( 'menus' );
+
 /**
  * Load up the version of jQuery you want. Pulled from http://bavotasan.com/2010/force-wordpress-use-latest-version-jquery/
  *

@@ -28,7 +28,7 @@
                     <nav class="top-bar top-nav" data-topbar role="navigation">
                         <ul class="title-area">
                             <li class="name">
-                                <h1><a href="#">eric lightbody</a></h1>
+                                <h1><a href="/">eric lightbody</a></h1>
                             </li>
                             <!-- Remove the class "menu-icon" to get rid oif menu icon. Take out "Menu" to just have icon alone -->
                             <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
@@ -36,8 +36,14 @@
                         <section class="top-bar-section">
                             <!-- Right Nav Section -->
                             <ul class="right">
-                                <li><a href="/about">About</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <?php
+                                $args = array(
+                                    'menu' => 'Top Nav',
+                                    'sort_column' => 'menu_order',
+                                    'container' => 'false',
+                                    'items_wrap' => '%3$s',
+                                );
+                                wp_nav_menu($args); ?>
                                 <li class="hide-for-small-only">
                                     <!--<form class="search">-->
                                     <!--<i class="fi-magnifying-glass"></i>-->

@@ -20,6 +20,7 @@
         endif;
         ?>
     </header><!-- .entry-header -->
+    <?php if (is_single()) { ?>
     <footer>
         <ul>
             <li><time datetime="<?= get_the_date(DateTime::RFC3339); ?>"><?= get_the_date('j F Y'); ?></time></li>
@@ -29,6 +30,7 @@
             <li><a href="#">Comment</a></li>
         </ul>
     </footer>
+    <?php } ?>
 
     <div class="entry-content">
         <?php
