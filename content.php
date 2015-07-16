@@ -14,20 +14,20 @@
     <header class="entry-header">
         <?php
         if ( is_single() ) :
-            the_title( '<h1 class="entry-title">', '</h1>' );
+            the_title( '<h2 class="entry-title">', '</h2>' );
         else :
             the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
         endif;
         ?>
     </header><!-- .entry-header -->
-    <?php if (is_single()) { ?>
+    <?php if (!is_page()) { ?>
     <footer>
         <ul>
             <li><time datetime="<?= get_the_date(DateTime::RFC3339); ?>"><?= get_the_date('j F Y'); ?></time></li>
             <li>
                 <?= get_the_category_list(',')?>
             </li>
-            <li><a href="#">Comment</a></li>
+            <li><a href="<?= comment_link();?>">Comment</a></li>
         </ul>
     </footer>
     <?php } ?>
