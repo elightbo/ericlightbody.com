@@ -6,7 +6,7 @@
  * and the comment form.
  *
  * @package WordPress
- * @subpackage Twenty_Fifteen
+ * @subpackage ericlightbody
  * @since Twenty Fifteen 1.0
  */
 
