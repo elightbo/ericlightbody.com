@@ -27,7 +27,7 @@
             <li>
                 <?= get_the_category_list(',')?>
             </li>
-            <li><a href="<?= comment_link();?>">Comment</a></li>
+            <li><a href="<?= comments_link();?>">Comment</a></li>
         </ul>
     </footer>
     <?php } ?>
