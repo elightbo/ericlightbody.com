@@ -61,7 +61,7 @@ function comment_nav() {
 			<?php
 			wp_list_comments( array(
 								  'style'       => 'ol',
-								  'shortsafasfdas_ping'  => true,
+								  'short_ping'  => true,
 								  'avatar_size' => 56,
 							  ) );
 			?>
