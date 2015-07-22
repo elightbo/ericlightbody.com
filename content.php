@@ -5,7 +5,7 @@
  * Used for both single and index/archive/search.
  *
  * @package WordPress
- * @subpackage Twenty_Fifteen
+ * @subpackage ericlightbody
  * @since Twenty Fifteen 1.0
  */
 ?>
