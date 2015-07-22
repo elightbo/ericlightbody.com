@@ -256,8 +256,12 @@ article footer li:not(:first-child):before {
 	margin-left: 0px;
 }
 
-.comment-list li {
+#comments-list li.comment {
 	list-style-type : none;
+}
+
+.comment-meta {
+	display: inline-block;
 }
 
 .vcard {
