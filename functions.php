@@ -59,13 +59,12 @@ function custom_comments($comment, $args, $depth)
 		?>
 		<div class="comment-meta">
 			<?php
+			commenter_link();
 			printf(
-//				__('%1$s at %2$s <span class="meta-sep">|</span> <a href="%3$s" title="Permalink to this comment">Permalink</a>', 'your-theme'),
 				__('<a href="%1$s" class="comment-time">%2$s at %3$s</a>'),
 				'#comment-' . get_comment_ID(),
 				get_comment_date(),
 				get_comment_time());
-			commenter_link();
 			?>
 		</div>
 	</div>

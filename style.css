@@ -253,11 +253,11 @@ article footer li:not(:first-child):before {
 }
 
 #comments-list p {
-	font-size: 1.1rem;
+	font-size : 1.1rem;
 }
 
 #comments ol {
-	margin-left: 0px;
+	margin-left : 0px;
 }
 
 #comments-list li.comment {
@@ -265,45 +265,61 @@ article footer li:not(:first-child):before {
 }
 
 #comments-list li {
-	border-bottom: 1px solid #e6e6e6;
-	padding: 2.0rem 0;
-}
-#comments-list li .children {
-	margin: 2.0rem 0 0 0;
-	padding: 0 0 0 2.4rem;
-	border-top: 1px solid #e6e6e6;
-}
-#comments-list ul li:last-child {
-	border-bottom-width : 0;
-	padding-bottom: 0;
+	border-bottom : 1px solid #e6e6e6;
+	padding       : 2.7rem 0;
 }
 
-#comments-list h3 { /** number of comments heading **/
-	padding : 2.3rem 0;
+#comments-list li .children {
+	margin     : 2.4rem 0 0 0;
+	padding    : 0 0 0 2.4rem;
+	border-top : 1px solid #e6e6e6;
+}
+
+#comments-list ul li:last-child {
+	border-bottom-width : 0;
+	padding-bottom      : 0;
+}
+
+#comments-list h3 {
+	/** number of comments heading **/
+	padding : 2.3rem 0 0.5rem;
 }
 
 .comment-meta {
-	display: inline-block;
-	vertical-align: middle;
+	display        : inline-block;
+	vertical-align : middle;
 }
 
 .vcard {
-	border : none;
+	border  : none;
 	padding : 0;
+	margin-bottom : 1.35rem;
 }
 
 .vcard img {
-	display : inline-block;
+	display       : inline-block;
 	border-radius : 50%;
-	margin-right: 0.8rem;
+	margin-right  : 1.8rem;
+	width         : 55px;
 }
 
 a.comment-time {
-	display: block;
+	display : block;
 }
 
-.comment-meta cite {
-	display: block;
+#comments-list .comment-meta, #comments-list cite {
+	line-height: 1.6rem;
+}
+
+.comment-meta cite.fn {
+	display     : block;
+	font-style: normal;
+	font-size: 1.1rem;
+	font-weight : normal;
+}
+
+.comment-meta .comment-time {
+	font-size : 0.9rem;
 }
 
 @media only screen and (max-width : 40em) {
