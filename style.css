@@ -266,14 +266,16 @@ article footer li:not(:first-child):before {
 
 #comments-list li {
 	border-bottom: 1px solid #e6e6e6;
+	padding: 2.0rem 0;
 }
 #comments-list li .children {
 	margin: 2.0rem 0 0 0;
-	padding: 2.0rem 0 0 2.4rem;
+	padding: 0 0 0 2.4rem;
 	border-top: 1px solid #e6e6e6;
 }
 #comments-list ul li:last-child {
 	border-bottom-width : 0;
+	padding-bottom: 0;
 }
 
 #comments-list h3 { /** number of comments heading **/
