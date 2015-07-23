@@ -252,6 +252,10 @@ article footer li:not(:first-child):before {
 	margin-top  : 3.2rem;
 }
 
+#comments-list p {
+	font-size: 1.1rem;
+}
+
 #comments ol {
 	margin-left: 0px;
 }
@@ -260,16 +264,44 @@ article footer li:not(:first-child):before {
 	list-style-type : none;
 }
 
+#comments-list li {
+	border-bottom: 1px solid #e6e6e6;
+}
+#comments-list li .children {
+	margin: 2.0rem 0 0 0;
+	padding: 2.0rem 0 0 2.4rem;
+	border-top: 1px solid #e6e6e6;
+}
+#comments-list ul li:last-child {
+	border-bottom-width : 0;
+}
+
+#comments-list h3 { /** number of comments heading **/
+	padding : 2.3rem 0;
+}
+
 .comment-meta {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .vcard {
 	border : none;
+	padding : 0;
 }
 
 .vcard img {
+	display : inline-block;
 	border-radius : 50%;
+	margin-right: 0.8rem;
+}
+
+a.comment-time {
+	display: block;
+}
+
+.comment-meta cite {
+	display: block;
 }
 
 @media only screen and (max-width : 40em) {
