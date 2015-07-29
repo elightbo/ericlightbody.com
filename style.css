@@ -20,7 +20,7 @@ body {
 	text-rendering  : optimizeLegibility;
 }
 
-a, a:hover, a:active {
+a, a:hover, a:focus {
 	color : #c55402;
 }
 
@@ -72,6 +72,12 @@ header .top-bar .name {
 	height : auto;
 }
 
+header .top-bar ul li {
+	background-color : transparent;
+	/*vertical-align: middle;*/
+	/*line-height : 3.7rem;*/
+}
+
 /** hamburger background **/
 header .top-bar.expanded .title-area {
 	background : none;
@@ -116,6 +122,10 @@ header .top-bar .name h1 a {
 	line-height    : 5.8rem;
 }
 
+.top-bar-section li:not(.has-form) a:active {
+	color : rgba(56, 56, 56, 0.77);
+}
+
 header .top-bar .name h1 a:hover, .top-bar-section li:not(.has-form) a:not(.button):hover {
 	background : #FFFFFF;
 	color      : #080808;
@@ -138,11 +148,12 @@ input::-webkit-search-cancel-button {
 }
 
 header form.search {
-	position : relative;
+	position   : relative;
+	margin-top : 15px;
 }
 
 .search .fi-magnifying-glass {
-	color     : #232323;
+	color     : rgba(35, 35, 35, 0.64);
 	position  : absolute;
 	top       : 17px;
 	z-index   : 100;
@@ -170,8 +181,8 @@ input[type=search]:focus {
 	width            : 130px;
 	padding-left     : 32px;
 	background-color : #FFFFFF;
-	border-color     : #6DCFF6;
-	box-shadow       : 0 0 5px rgba(109, 207, 246, .5);
+	border           : 1px solid #ccc;
+	box-shadow       : 0 0 5px rgba(163, 163, 163, 0.78);
 	color            : #000000;
 	cursor           : auto;
 }
@@ -216,8 +227,7 @@ input::-webkit-input-placeholder {
 
 /** articles **/
 article footer ul {
-	text-align    : center;
-	margin-bottom : 2.3rem;
+	text-align : center;
 }
 
 article footer li {
@@ -227,11 +237,15 @@ article footer li {
 }
 
 /** Content **/
+.entry-content {
+	margin-top : 2.3rem;
+}
+
 .entry-content p {
 	margin-bottom : 1.8rem;
 }
 
-article footer li, article footer li a {
+article footer li, article footer li a, article footer li, article footer li a:focus {
 	color : rgba(119, 119, 119, 0.78);
 }
 
@@ -291,8 +305,8 @@ article footer li:not(:first-child):before {
 }
 
 .vcard {
-	border  : none;
-	padding : 0;
+	border        : none;
+	padding       : 0;
 	margin-bottom : 1.35rem;
 }
 
@@ -308,13 +322,13 @@ a.comment-time {
 }
 
 #comments-list .comment-meta, #comments-list cite {
-	line-height: 1.6rem;
+	line-height : 1.6rem;
 }
 
 .comment-meta cite.fn {
 	display     : block;
-	font-style: normal;
-	font-size: 1.1rem;
+	font-style  : normal;
+	font-size   : 1.1rem;
 	font-weight : normal;
 }
 
@@ -323,25 +337,33 @@ a.comment-time {
 }
 
 .form-submit {
-	margin-top: 1.9rem;
+	margin-top : 1.9rem;
 }
 
 label {
-	display: inline-block;
+	display : inline-block;
 }
 
 span.required {
-	display : inline-block;
-	line-height: 1.5;
-	font-size: 0.875rem;
+	display     : inline-block;
+	line-height : 1.5;
+	font-size   : 0.875rem;
+}
+
+/** Contact form stuff **/
+body div.wpcf7-validation-errors {
+	border  : none;
+	padding : 0;
+	margin  : 0;
 }
 
 button.button {
-	background-color: #c55402;
+	background-color : #c55402;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
-	background-color: #ad4a02; }
+	background-color : #ad4a02;
+}
 
 @media only screen and (max-width : 40em) {
 	.top-bar-section li:not(.has-form) a:not(.button) {
