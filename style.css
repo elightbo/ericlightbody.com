@@ -20,7 +20,7 @@ body {
 	text-rendering  : optimizeLegibility;
 }
 
-a, a:hover {
+a, a:hover, a:active {
 	color : #c55402;
 }
 
@@ -321,6 +321,27 @@ a.comment-time {
 .comment-meta .comment-time {
 	font-size : 0.9rem;
 }
+
+.form-submit {
+	margin-top: 1.9rem;
+}
+
+label {
+	display: inline-block;
+}
+
+span.required {
+	display : inline-block;
+	line-height: 1.5;
+	font-size: 0.875rem;
+}
+
+button.button {
+	background-color: #c55402;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+	background-color: #ad4a02; }
 
 @media only screen and (max-width : 40em) {
 	.top-bar-section li:not(.has-form) a:not(.button) {

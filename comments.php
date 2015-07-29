@@ -100,7 +100,7 @@ endif;
 
 					<?php else : ?>
 
-						<p id="comment-notes"><?php _e('Your email is <em>never</em> published nor shared.', 'your-theme') ?><?php if ($req) _e('Required fields are marked <span class="required">*</span>', 'your-theme') ?></p>
+						<p id="comment-notes"><?php _e('I promise not to publish your email address.', 'your-theme') ?></p>
 
 						<div id="form-section-author" class="form-section">
 							<div class="form-label">
@@ -135,17 +135,11 @@ endif;
 							<textarea id="comment" name="comment" cols="45" rows="8" tabindex="6"></textarea></div>
 					</div>
 					<!-- #form-section-comment .form-section -->
-
-					<div id="form-allowed-tags" class="form-section">
-						<p>
-							<span><?php _e('You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:', 'your-theme') ?></span>
-							<code><?php echo allowed_tags(); ?></code></p>
-					</div>
-
 					<?php do_action('comment_form', $post->ID); ?>
 
 					<div class="form-submit">
-						<input id="submit" name="submit" type="submit" value="<?php _e('Post Comment', 'your-theme') ?>" tabindex="7"/><input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>"/>
+						<button class="button small"><?php _e('Post Comment', 'your-theme') ?></button>
+						<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>"/>
 					</div>
 
 					<?php comment_id_fields(); ?>

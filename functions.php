@@ -81,6 +81,7 @@ function custom_comments($comment, $args, $depth)
 				'reply_text' => __('Reply', 'your-theme'),
 				'login_text' => __('Log in to reply.', 'your-theme'),
 				'depth'      => $depth,
+				'add_below' => 'comment',
 			)));
 	endif;
 	edit_comment_link(__('Edit', 'your-theme'), ' <span class="meta-sep">|</span> <span class="edit-link">', '</span>');
