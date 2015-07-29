@@ -4,32 +4,36 @@
  *
  * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
  *
- * @package WordPress
+ * @package    WordPress
  * @subpackage ericlightbody
- * @since Twenty Fifteen 1.0
+ * @since      Twenty Fifteen 1.0
  */
 ?>
+
+<?php
+$searchQuery = get_search_query();
+?>
 <section class="no-results not-found">
-    <header class="page-header">
-        <h1 class="page-title"><?php _e( 'Nothing Found', 'twentyfifteen' ); ?></h1>
-    </header><!-- .page-header -->
+	<header class="page-header">
+		<h2 class="page-title"><?php (empty($searchQuery)) ? _e('Search') : _e('Nothing Found'); ?> </h2>
+	</header>
+	<!-- .page-header -->
 
-    <div class="page-content">
+	<div class="page-content">
 
-        <?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+		<?php if (is_home() && current_user_can('publish_posts')) { ?>
 
-            <p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'twentyfifteen' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+			<p><?php printf(__('Ready to publish your first post? <a href="%1$s">Get started here</a>.'), esc_url(admin_url('post-new.php'))); ?></p>
 
-        <?php elseif ( is_search() ) : ?>
-            <p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyfifteen' ); ?></p>
-            <?php get_search_form(); ?>
-
-        <?php else : ?>
-
-            <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentyfifteen' ); ?></p>
-            <?php get_search_form(); ?>
-
-        <?php endif; ?>
-
-    </div><!-- .page-content -->
+		<?php }
+		else { ?>
+			<p>
+				<?php (empty($searchQuery)) ? _e('Can\'t find what you\'re looking for? Maybe searching will help. ') : _e('Sorry, but nothing matched your search terms. '); ?>
+			<?php
+			_e(' If you still can\'t find find it, maybe try a <a href="https://duckduckgo.com/?q=site%3Aericlightbody.com">better search</a>.');
+			get_search_form();
+			?>
+		<?php } ?>
+	</div>
+	<!-- .page-content -->
 </section><!-- .no-results -->

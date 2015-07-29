@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family : "PT Serif", Helvetica, Roboto, Arial, sans-serif;
 }
 
+h2 {
+	font-size: 2.2rem;
+}
+
 article h2 a {
 	color : #333333;
 }
@@ -237,7 +241,7 @@ article footer li {
 }
 
 /** Content **/
-.entry-content {
+.entry-content, .page-content {
 	margin-top : 2.3rem;
 }
 

@@ -49,12 +49,12 @@
 						);
 						wp_nav_menu($args); ?>
 						<li class="hide-for-small-only">
-							<form class="search">
+							<form class="search" method="get" action="/search">
 								<i class="fi-magnifying-glass"></i>
-								<input type="search"/>
+								<input type="search" name="s"/>
 							</form>
 						</li>
-						<li class="show-for-medium-down">
+						<li class="show-for-small-only">
 							<a href="/search">Search</a>
 						</li>
 					</ul>
