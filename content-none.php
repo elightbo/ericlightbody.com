@@ -30,7 +30,7 @@ $searchQuery = get_search_query();
 			<p>
 				<?php (empty($searchQuery)) ? _e('Can\'t find what you\'re looking for? Maybe searching will help. ') : _e('Sorry, but nothing matched your search terms. '); ?>
 			<?php
-			_e(' If you still can\'t find find it, maybe try a <a href="https://duckduckgo.com/?q=site%3Aericlightbody.com">better search</a>.');
+			_e(' If you still can\'t find find it, maybe try a <a href="https://duckduckgo.com/?q=site%3Aericlightbody.com">different search</a>.');
 			get_search_form();
 			?>
 		<?php } ?>

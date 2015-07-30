@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	font-size: 2.2rem;
+	font-size : 2.2rem;
 }
 
 article h2 a {
@@ -195,15 +195,6 @@ input[type=search]:hover {
 	background-color : #FFFFFF;
 }
 
-/* placeholder */
-input:-moz-placeholder {
-	color : transparent;
-}
-
-input::-webkit-input-placeholder {
-	color : transparent;
-}
-
 [role=content] {
 	padding : 60px 0;
 }
@@ -230,6 +221,12 @@ input::-webkit-input-placeholder {
 }
 
 /** articles **/
+article {
+	margin-bottom  : 5.3rem;
+	padding-bottom : 3.5rem;
+	border-bottom  : 1px solid #E1E1E1;
+}
+
 article footer ul {
 	text-align : center;
 }
@@ -238,6 +235,14 @@ article footer li {
 	display    : inline;
 	list-style : none;
 	font-size  : 1.3rem;
+}
+
+.next-posts-link {
+	text-align : right;
+}
+
+.row.posts-navigation {
+	margin-top : -1.8rem;
 }
 
 /** Content **/
