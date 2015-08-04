@@ -32,27 +32,27 @@ get_header(); ?>
 			}
 
 			$previousLink = get_previous_posts_link('&laquo; Newer Posts');
-			$nextLink     = get_next_posts_link('Older Posts &raquo;'); ?>
-
-			<div class="row posts-navigation">
-				<div class="columns small-6">
-					<?php
-					if ($previousLink) {
-						echo "<div class='previous-posts-link'>{$previousLink}</div>";
-					}
-					?>
+			$nextLink     = get_next_posts_link('Older Posts &raquo;');
+			if ($previousLink || $nextLink) {
+				?>
+				<div class="row posts-navigation">
+					<div class="columns small-6">
+						<?php
+						if ($previousLink) {
+							echo "<div class='previous-posts-link'>{$previousLink}</div>";
+						}
+						?>
+					</div>
+					<div class="columns small-6">
+						<?php
+						if ($nextLink) {
+							echo "<div class='next-posts-link'>{$nextLink}</div>";
+						}
+						?>
+					</div>
 				</div>
-				<div class="columns small-6">
-					<?php
-					if ($nextLink) {
-						echo "<div class='next-posts-link'>{$nextLink}</div>";
-					}
-					?>
-				</div>
-			</div>
-			<?php
-
-
+				<?php
+			}
 		}
 		// If no content, include the "No posts found" template.
 		else {

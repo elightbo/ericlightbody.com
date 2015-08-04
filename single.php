@@ -27,17 +27,6 @@ get_header(); ?>
 				comments_template();
 			endif;
 
-			// Previous/next post navigation.
-			the_post_navigation(
-				array(
-					'next_text' => '<span class="meta-nav" aria-hidden="true">' . __('Next') . '</span> ' .
-						'<span class="screen-reader-text">' . __('Next post:') . '</span> ' .
-						'<span class="post-title">%title</span>',
-					'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __('Previous') . '</span> ' .
-						'<span class="screen-reader-text">' . __('Previous post:') . '</span> ' .
-						'<span class="post-title">%title</span>',
-				));
-
 			// End the loop.
 		endwhile;
 		?>

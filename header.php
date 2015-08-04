@@ -49,7 +49,7 @@
 						);
 						wp_nav_menu($args); ?>
 						<li class="hide-for-small-only">
-							<form class="search" method="get" action="/search">
+							<form role="search" class="search" method="get" action="/">
 								<i class="fi-magnifying-glass"></i>
 								<input type="search" name="s"/>
 							</form>

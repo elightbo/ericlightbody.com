@@ -199,6 +199,11 @@ input[type=search]:hover {
 	padding : 60px 0;
 }
 
+[role=content] > .row > .column {
+	padding-left  : 0;
+	padding-right : 0;
+}
+
 [role=content] h2 {
 	text-align : center;
 }
@@ -222,9 +227,17 @@ input[type=search]:hover {
 
 /** articles **/
 article {
-	margin-bottom  : 5.3rem;
 	padding-bottom : 3.5rem;
 	border-bottom  : 1px solid #E1E1E1;
+}
+
+.blog article, .search article {
+	/** margin for blog list **/
+	margin-bottom : 5.3rem;
+}
+
+.search article:last-of-type, .blog article:last-of-type {
+	border-bottom-width : 0;
 }
 
 article footer ul {
@@ -237,12 +250,19 @@ article footer li {
 	font-size  : 1.3rem;
 }
 
+img.align-left {
+	margin : 10px 25px 0 0;
+	float  : left;
+}
+
 .next-posts-link {
 	text-align : right;
 }
 
 .row.posts-navigation {
-	margin-top : -1.8rem;
+	margin-top : -2.3rem;
+	border-top: 1px solid #E1E1E1;
+	padding-top: 3.5rem;
 }
 
 /** Content **/
@@ -270,9 +290,9 @@ article footer li:not(:first-child):before {
 
 /** Comments **/
 #comments {
-	border-top  : 1px solid #E1E1E1;
+	/*border-top  : 1px solid #E1E1E1;*/
 	padding-top : 2.2rem;
-	margin-top  : 3.2rem;
+	margin-top  : 1.2rem;
 }
 
 #comments-list p {
@@ -311,6 +331,14 @@ article footer li:not(:first-child):before {
 .comment-meta {
 	display        : inline-block;
 	vertical-align : middle;
+}
+
+#comments-list {
+	margin-bottom : 4.2rem;
+}
+
+#respond {
+	margin-top : 1.2rem;
 }
 
 .vcard {
