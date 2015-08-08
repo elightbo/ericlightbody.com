@@ -196,7 +196,7 @@ input[type=search]:hover {
 }
 
 [role=content] {
-	padding : 60px 0;
+	padding : 5.3rem 0;
 }
 
 [role=content] > .row > .column {
@@ -231,13 +231,14 @@ article {
 	border-bottom  : 1px solid #E1E1E1;
 }
 
-.blog article, .search article {
+.blog article, .search article, .category article {
 	/** margin for blog list **/
 	margin-bottom : 5.3rem;
 }
 
-.search article:last-of-type, .blog article:last-of-type {
+.search article:last-of-type, .blog article:last-of-type, .category article:last-of-type {
 	border-bottom-width : 0;
+	margin-bottom : 0rem;
 }
 
 article footer ul {
@@ -260,7 +261,7 @@ img.align-left {
 }
 
 .row.posts-navigation {
-	margin-top : -2.3rem;
+	margin-top : 3.1rem;
 	border-top: 1px solid #E1E1E1;
 	padding-top: 3.5rem;
 }

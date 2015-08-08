@@ -27,7 +27,7 @@
 					<time datetime="<?= get_the_date(DateTime::RFC3339); ?>"><?= get_the_date('j F Y'); ?></time>
 				</li>
 				<li>
-					<?= get_the_category_list(',') ?>
+					<?= get_the_category_list(', ') ?>
 				</li>
 				<li><a href="<?= comments_link(); ?>">Comment</a></li>
 			</ul>
