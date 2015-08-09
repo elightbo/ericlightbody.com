@@ -68,7 +68,6 @@ endif;
 			<ol>
 				<?php wp_list_comments('type=pings&callback=custom_pings'); ?>
 			</ol>
-
 		</div><!-- #trackbacks-list .comments -->
 
 	<?php endif /* if ( $ping_count ) */ ?>

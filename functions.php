@@ -81,12 +81,24 @@ function custom_comments($comment, $args, $depth)
 				'reply_text' => __('Reply', 'your-theme'),
 				'login_text' => __('Log in to reply.', 'your-theme'),
 				'depth'      => $depth,
-				'add_below' => 'comment',
+				'add_below'  => 'comment',
 			)));
 	endif;
 	edit_comment_link(__('Edit', 'your-theme'), ' <span class="meta-sep">|</span> <span class="edit-link">', '</span>');
 	?>
 <?php }
+
+/** restrict search to posts only */
+function my_search_filter($query)
+{
+	if ($query->is_search) {
+		$query->set('post_type', 'post');
+	}
+
+	return $query;
+}
+
+add_filter('pre_get_posts', 'my_search_filter');
 
 // Custom callback to list pings
 function custom_pings($comment, $args, $depth)

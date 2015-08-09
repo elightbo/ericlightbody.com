@@ -29,7 +29,7 @@
 				<li>
 					<?= get_the_category_list(', ') ?>
 				</li>
-				<li><a href="<?= comments_link(); ?>">Comment</a></li>
+				<li><a href="<?= comments_link(); ?>"><?= comments_number('Comment', 'One Comment', '% Comments');?></a></li>
 			</ul>
 		</footer>
 	<?php } ?>
@@ -37,11 +37,7 @@
 	<div class="entry-content">
 		<?php
 		/* translators: %s: Name of current post */
-		the_content(
-			sprintf(
-				__('Continue reading %s'),
-				the_title('<span class="screen-reader-text">', '</span>', false)
-			));
+		the_content('Read more...');
 
 		wp_link_pages(
 			array(
