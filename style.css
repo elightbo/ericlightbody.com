@@ -226,6 +226,11 @@ input[type=search]:hover {
 	margin-top : 3.2rem;
 }
 
+[role=footer] .column.large-6 {
+	padding-left  : 2.9rem;
+	padding-right : 3.9rem;
+}
+
 /** articles **/
 article {
 	padding-bottom : 3.5rem;
