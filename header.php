@@ -14,6 +14,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
 	<?php wp_enqueue_style('foundation');
 	wp_enqueue_style('foundation-icons');
 	wp_enqueue_script('modernizr');
