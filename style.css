@@ -199,6 +199,12 @@ input[type=search]:hover {
 	padding : 5.3rem 0;
 }
 
+@media only screen and (max-width: 64.063em) {
+	[role=content] {
+		padding : 5.3rem 1.4rem;
+	}
+}
+
 [role=content] > .row > .column {
 	padding-left  : 0;
 	padding-right : 0;
@@ -210,7 +216,6 @@ input[type=search]:hover {
 
 [role=footer] .row {
 	border-top     : 1px solid rgb(74, 34, 20);
-	padding-top    : 40px;
 	padding-bottom : 40px;
 	font-size      : 1.35rem;
 	color          : rgba(0, 0, 0, 0.83);
@@ -218,6 +223,7 @@ input[type=search]:hover {
 
 [role=footer] h1 {
 	font-size : 1.6rem;
+	margin-top : 3.2rem;
 }
 
 [role=footer] .column.large-6 {
