@@ -256,6 +256,10 @@ img.align-left, img.alignleft {
 	float  : left;
 }
 
+img.img-border {
+	margin: 3.0rem 0;
+}
+
 #download-tweetiepie img {
 	margin  : 0 auto 6px;
 	display : block;
