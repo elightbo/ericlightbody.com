@@ -251,13 +251,13 @@ article footer li {
 	font-size  : 1.3rem;
 }
 
+img.img-border {
+	margin: 3.0rem 0;
+}
+
 img.align-left, img.alignleft {
 	margin : 10px 25px 0 0;
 	float  : left;
-}
-
-img.img-border {
-	margin: 3.0rem 0;
 }
 
 #download-tweetiepie img {
