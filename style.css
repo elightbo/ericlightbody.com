@@ -209,12 +209,6 @@ input[type=search]:hover {
 	padding : 5.3rem 0;
 }
 
-@media only screen and (max-width : 64.063em) {
-	[role=content] {
-		padding : 3.3rem 0.9rem;
-	}
-}
-
 [role=content] > .row > .column {
 	padding-left  : 0;
 	padding-right : 0;
@@ -300,6 +294,15 @@ img.align-left, img.alignleft {
 	margin      : 3.1rem 0 -1.6rem;
 	border-top  : 1px solid #E1E1E1;
 	padding-top : 3.5rem;
+}
+
+@media only screen and (max-width : 64.063em) {
+  [role=content] {
+    padding : 3.3rem 0.9rem 3.8rem;
+  }
+  .row.posts-navigation {
+    padding-top: 2.5rem;
+  }
 }
 
 /** Content **/
@@ -447,4 +450,14 @@ button:hover, button:focus, .button:hover, .button:focus {
 	.top-bar-section li:not(.has-form) a:not(.button) {
 		line-height : 2rem;
 	}
+  .blog article, .search article, .category article {
+    /** margin for blog list **/
+    margin-bottom : 3.3rem;
+  }
+  article {
+    padding-bottom: 2.1rem;
+  }
+  .search article:last-of-type, .blog article:last-of-type, .category article:last-of-type {
+    border-bottom-width : 0;
+  }
 }
