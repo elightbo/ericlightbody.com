@@ -69,7 +69,7 @@ function custom_comments($comment, $args, $depth)
 		</div>
 	</div>
 
-	<?php if ($comment->comment_approved == '0') _e("ttttt<span class='unapproved'>Your comment is awaiting moderation.</span>n", 'your-theme') ?>
+	<?php if ($comment->comment_approved == '0') _e("<span class='unapproved'>Your comment is awaiting moderation.</span>", 'your-theme') ?>
 	<div class="comment-content">
 		<?php comment_text() ?>
 	</div>
@@ -112,7 +112,7 @@ function custom_pings($comment, $args, $depth)
 			get_comment_date(),
 			get_comment_time());
 		edit_comment_link(__('Edit', 'your-theme'), ' <span class="meta-sep">|</span> <span class="edit-link">', '</span>'); ?></div>
-	<?php if ($comment->comment_approved == '0') _e('ttttt<span class="unapproved">Your trackback is awaiting moderation.</span>n', 'your-theme') ?>
+	<?php if ($comment->comment_approved == '0') _e('<span class="unapproved">Your trackback is awaiting moderation.</span>', 'your-theme') ?>
 	<div class="comment-content">
 		<?php comment_text() ?>
 	</div>
