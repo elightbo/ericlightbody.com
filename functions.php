@@ -7,6 +7,8 @@
 
 add_theme_support('menus');
 add_theme_support( 'title-tag' );
+remove_action( 'wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'wp_generator');
 
 /**
  * Load up the version of jQuery you want. Pulled from http://bavotasan.com/2010/force-wordpress-use-latest-version-jquery/
