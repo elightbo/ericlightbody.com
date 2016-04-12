@@ -18,7 +18,7 @@
 			I'm an open source Milwaukee developer with a focus on PHP. I love to develop,
 			but also appreciate design. I'm a proud father of two and happily married to my High School sweetheart. If
 			you're curious about my professional life, please view my
-			<a href="/wp-content/uploads/2015/08/eric-lightbody.pdf">resume</a>.
+			<a href="<?php get_template_directory_uri() . 'docs/eric-lightbody.pdf'?>">resume</a>.
 		</div>
 		<div class="column large-6">
 			<h1>On the Internet</h1>
