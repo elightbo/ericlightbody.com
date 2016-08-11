@@ -23,7 +23,7 @@ function current_jquery($version)
 
 		wp_register_script(
 			'jquery',
-			'http://ajax.googleapis.com/ajax/libs/jquery/' . $version . '/jquery.min.js',
+			'//ajax.googleapis.com/ajax/libs/jquery/' . $version . '/jquery.min.js',
 			false, $version);
 	}
 }
