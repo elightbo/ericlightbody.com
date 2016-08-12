@@ -62,7 +62,7 @@ function custom_comments($comment, $args, $depth)
 		?>
 		<div class="comment-meta">
 			<?php
-			commenter_link();
+			echo get_comment_author_link();
 			printf(
 				__('<a href="%1$s" class="comment-time">%2$s at %3$s</a>'),
 				'#comment-' . get_comment_ID(),
@@ -120,16 +120,3 @@ function custom_pings($comment, $args, $depth)
 		<?php comment_text() ?>
 	</div>
 <?php }
-
-// Produces an avatar image with the hCard-compliant photo class
-function commenter_link()
-{
-	$commenter = get_comment_author_link();
-	if (preg_match('<a[^>]* class=[^>]+>', $commenter)) {
-		$commenter = preg_replace('(<a[^>]* class=[""]?)', '\1url ', $commenter);
-	}
-	else {
-		$commenter = preg_replace('(<a )/', '\1class="url "', $commenter);
-	}
-	echo '<cite class="fn n">' . $commenter . '</cite>';
-}
