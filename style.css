@@ -434,10 +434,6 @@ body div.wpcf7-validation-errors {
 	margin  : 0;
 }
 
-body div.wpcf7-mail-sent-ok {
-	border: 1px solid #FF6A00;
-}
-
 button.button {
 	background-color : #c55402;
 }
