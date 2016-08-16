@@ -434,7 +434,7 @@ body div.wpcf7-validation-errors {
 	margin  : 0;
 }
 
-div.wpcf7-mail-sent-ok {
+body div.wpcf7-mail-sent-ok {
 	border: 1px solid #FF6A00;
 }
 
